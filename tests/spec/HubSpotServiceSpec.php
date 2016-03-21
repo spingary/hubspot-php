@@ -37,6 +37,11 @@ class HubSpotServiceSpec extends ObjectBehavior
         $this->blogPosts()->shouldHaveType('Fungku\HubSpot\Api\BlogPosts');
     }
 
+    function it_creates_a_blogTopics_api_class()
+    {
+        $this->blogTopics()->shouldHaveType('Fungku\HubSpot\Api\BlogTopics');
+    }
+
     function it_creates_a_contacts_api_class()
     {
         $this->contacts()->shouldHaveType('Fungku\HubSpot\Api\Contacts');
